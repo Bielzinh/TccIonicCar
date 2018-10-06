@@ -1,0 +1,100 @@
+<ion-content>
+<!-- DIV DE TELA DE LOGIN -->
+<div class="login" align="center" *ngIf="login">
+
+<!-- CRIANDO ÍCONE DE LOGIN -->
+<ion-icon class= "icon-login" name="car"></ion-icon>
+
+<!-- DIV DE LETRAS DA TELA DE LOGIN -->
+<div class="mg-top-30">
+    <h5 class="cinza center bold no-margin">
+      Bem vindo ao nosso aplicativo
+    </h5>
+    <p class="snow center light no-margin mg-top-5">
+      Entre com sua conta para continuar
+    </p>
+  </div>
+ <!-- Criando formulário -->
+ <div class="padding-40">
+    <ion-item class="bg-transparent no-padding ">
+      <ion-label stacked class="cinza bold">E-mail</ion-label>
+      <ion-input type="email" class="cinza" [(ngModel)]="loginForm.email"></ion-input>
+    </ion-item>
+
+    <ion-item class="bg-transparent no-padding mg-top-20">
+        <ion-label stacked class="cinza bold">Senha</ion-label>
+        <ion-input type="password" class="cinza" [(ngModel)]="loginForm.password"></ion-input>
+      </ion-item>
+ <!-- Botão -->
+ <div class="ctaLogin center bold mg-top-10" (click)="Fazerlogin()">
+    Entrar
+  </div>
+
+  <!-- NOVA CONTA -->
+  <div class="txtRegistrar bold mg-top-10 center" (click)="exibirRegistrar()">
+      Não possui conta ? Cadastre-se
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- REGISTRO -->
+<div class="bg-register" align="center" *ngIf="register" >
+    <!-- OVERLAY -->
+    <div class="overlay">
+    <!-- REGISTRO CONTAINER -->
+    <div>
+    <!-- CRIANDO ÍCONE DE LOGIN -->
+    <ion-icon class= "icon-login" name="car"></ion-icon>
+    <div class="mg-top-30">
+    <h5 class="cinza center bold no-margin">
+      Vamos lá !
+    </h5>
+    <p class="snow center light no-margin mg-top-5">
+      Crie suas credênciais de acesso
+    </p>
+    </div>
+    <!-- Formulario -->
+    <div class="padding-40  ">
+      <ion-item class="bg-transparent no-padding mg-top-10">
+        <ion-label stacked class="cinza bold">Como vc se Chama ?</ion-label>
+        <ion-input type="text" class="cinza" [(ngModel)]="registerForm.name"></ion-input>
+      </ion-item>
+
+      <ion-item class="bg-transparent no-padding mg-top-10 ">
+        <ion-label stacked class="cinza bold">Qual é seu email ?</ion-label>
+        <ion-input type="email" class="cinza" [(ngModel)]="registerForm.email"></ion-input>
+      </ion-item>
+
+      <ion-item class="bg-transparent no-padding mg-top-10">
+        <ion-label stacked class="cinza bold">Escolha uma super Senha </ion-label>
+        <ion-input type="password" class="cinza" [(ngModel)]="registerForm.password"></ion-input>
+      </ion-item>
+      <!-- Botão -->
+      <div class="ctaRegister center bold mg-top-10" (click)="criarNovaConta()">
+        Cadastrar
+      </div>
+      <!-- NOVA CONTA -->
+      <div class="txtRegistrar bold mg-top-10 center" (click)= "exibirLogin()">
+       Já tenho uma conta
+
+      </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+</ion-content>

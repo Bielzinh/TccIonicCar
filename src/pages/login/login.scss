@@ -1,0 +1,42 @@
+//TELA PRINCIPAL
+.login{
+  width:100%;
+  height:100%;
+  background-size:cover; //ajusta a tela
+  background-position:center;
+}
+
+//ICONE DE LOGIN
+.icon-login{
+   font-size:15.0em;
+   color: rgb(0, 153, 255);
+}
+
+.bg-transparent{
+  background: transparent;
+}
+// Botão de Login
+.ctaLogin{
+  padding: 10px;
+  background: rgb(0, 153, 255);
+  border-radius:100px;
+  color:  #d3d3d3;
+}
+
+.txtRegistrar{
+  color: #d3d3d3;
+
+}
+
+.bg-register{
+  width:100%;
+  height: fit-content;
+  background-size:cover; //ajusta a tela
+  background-position:center;
+}
+.ctaRegister{
+  padding: 10px;
+  background: rgb(0, 153, 255);
+  border-radius:100px;
+  color: #d3d3d3;
+}
