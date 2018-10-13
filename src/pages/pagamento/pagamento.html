@@ -1,0 +1,38 @@
+
+<div class="login" align="center" >
+  <ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title >  Pagamento </ion-title>
+    </ion-navbar>
+  </ion-header>
+
+
+  <ion-content padding>
+
+      <h1 class="ab"> Informe os dados</h1>
+      <p class="c">Informe abaixo o numero do seu cartão </p>
+      <p class="c">Ou utilize o QR code, encontrado no verso </p>
+
+<ion-item>
+<ion-input type="texte" placeholder=" DADOS DO QR CODE" [(ngModel)]="qrData">
+</ion-input>
+</ion-item>
+<div class="ctaLogin center bold mg-top-10"(click)="createCode()"><ion-icon name="barcode"></ion-icon> Criar Código</div>
+<div class="ctaLogin center bold mg-top-10"(click)="scanCode()"> <ion-icon name="barcode"></ion-icon> Escanear Código</div>
+
+<ion-card *ngIf="createdCode">
+<ngx-qrcode [qrc-value]="createdCode"></ngx-qrcode>
+<ion-card-content>
+  <p>Value: {{ createdCode }}</p>
+</ion-card-content>
+</ion-card>
+<ion-card *ngIf="scannedCode">
+  <ion-card-content>
+    Resultado do Scanneamento: {{ scannedCode }}
+  </ion-card-content>
+</ion-card>
+</ion-content>
+  </div>

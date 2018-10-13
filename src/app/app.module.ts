@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //Plugindd
 import { IonicStorageModule } from '@ionic/storage';
 import { MyApp } from './app.component';
+
+
 //firebase config
 import { firebaseConfig } from '../configs/firebase';
 import { AngularFireModule } from 'angularfire2';
@@ -24,7 +26,7 @@ import { LoginPageModule } from '../pages/login/login.module';
 import { HomePageModule } from '../pages/home/home.module';
 import { CartaoPageModule } from '../pages/cartao/cartao.module';
 import { HistoricoPageModule } from '../pages/historico/historico.module';
-
+import { PagamentoPageModule } from '../pages/pagamento/pagamento.module';
 
 
 
@@ -38,6 +40,7 @@ import { HistoricoPageModule } from '../pages/historico/historico.module';
     HomePageModule,
     CartaoPageModule,
     HistoricoPageModule,
+    PagamentoPageModule,
 
     //outros
     AngularFireModule.initializeApp(firebaseConfig),
@@ -46,6 +49,7 @@ import { HistoricoPageModule } from '../pages/historico/historico.module';
     AngularFireAuthModule,
     BrowserAnimationsModule,
     BrowserModule,
+
     IonicModule.forRoot(MyApp),
     IonicStorageModule.forRoot()
   ],

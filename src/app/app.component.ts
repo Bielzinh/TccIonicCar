@@ -42,7 +42,7 @@ export class MyApp {
     this.pages = [
       { title: 'Meus Cartões', component: 'CartaoPage' },
       { title: 'Histórico', component: 'HistoricoPage' },
-      { title: 'Pagamento' },
+      { title: 'Pagamento', component: 'PagamentoPage'},
       { title: 'Sair', component: 'LoginPage' },
 
 
