@@ -17,9 +17,13 @@ import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/dat
 //providers
 import { AuthProvider } from '../providers/auth';
 import {FirebaseProvider} from '../providers/firebase';
+
+
 //pages
 import { LoginPageModule } from '../pages/login/login.module';
 import { HomePageModule } from '../pages/home/home.module';
+import { CartaoPageModule } from '../pages/cartao/cartao.module';
+import { HistoricoPageModule } from '../pages/historico/historico.module';
 
 
 
@@ -32,6 +36,8 @@ import { HomePageModule } from '../pages/home/home.module';
     //pages
     LoginPageModule,
     HomePageModule,
+    CartaoPageModule,
+    HistoricoPageModule,
 
     //outros
     AngularFireModule.initializeApp(firebaseConfig),
@@ -54,6 +60,7 @@ import { HomePageModule } from '../pages/home/home.module';
     AuthProvider,
     StatusBar,
     SplashScreen,
+
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
