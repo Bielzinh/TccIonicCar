@@ -21,7 +21,7 @@
 </ion-input>
 </ion-item>
 <div class="ctaLogin center bold mg-top-10"(click)="createCode()"><ion-icon name="barcode"></ion-icon> Criar Código</div>
-<div class="ctaLogin center bold mg-top-10"(click)="scanCode()"> <ion-icon name="barcode"></ion-icon> Escanear Código</div>
+<div class="ctaLogin center bold mg-top-10"(click)="scanCode()"> <ion-icon name="barcode"></ion-icon> Efetuar Pagamento</div>
 
 <ion-card *ngIf="createdCode">
 <ngx-qrcode [qrc-value]="createdCode"></ngx-qrcode>

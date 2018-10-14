@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner'
+import { EfetuarpagamentoPage } from '../efetuarpagamento/efetuarpagamento';
 
 @IonicPage()
 @Component({
@@ -12,16 +13,14 @@ qrData = null;
 createdCode = null;
 scannedCode = null;
 
-  constructor(private barcodeScanner: BarcodeScanner) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+     private barcodeScanner: BarcodeScanner) {
   }
 
 createCode(){
   this.createdCode = this.qrData;
 }
 scanCode(){
-  this.barcodeScanner.scan().then(barcodeData => {
-    this.scannedCode = barcodeData.text;
-  })
-
+  this.navCtrl.push(EfetuarpagamentoPage);
 }
 }

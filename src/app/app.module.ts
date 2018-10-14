@@ -27,9 +27,8 @@ import { HomePageModule } from '../pages/home/home.module';
 import { CartaoPageModule } from '../pages/cartao/cartao.module';
 import { HistoricoPageModule } from '../pages/historico/historico.module';
 import { PagamentoPageModule } from '../pages/pagamento/pagamento.module';
-
-
-
+import { HistoricopagaPageModule } from '../pages/historicopaga/historicopaga.module';
+import { EfetuarpagamentoPageModule } from '../pages/efetuarpagamento/efetuarpagamento.module';
 @NgModule({
   declarations: [
     MyApp
@@ -41,6 +40,8 @@ import { PagamentoPageModule } from '../pages/pagamento/pagamento.module';
     CartaoPageModule,
     HistoricoPageModule,
     PagamentoPageModule,
+    HistoricopagaPageModule,
+    EfetuarpagamentoPageModule,
 
     //outros
     AngularFireModule.initializeApp(firebaseConfig),
