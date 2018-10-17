@@ -43,9 +43,10 @@
     text-align: center;
   }
 
-
-
-
+.list-custom .item a{
+  background-color: #000000;
+  color: orange;
+}
 
   //Font Style
   .bold{
@@ -54,3 +55,14 @@
   .light{
     font-weight: 300;
   }
+  ion-menu{
+    ion-content{
+      background: linear-gradient(to left, rgb(0, 153, 255) 0%, #fff 100%);
+
+    }
+   }
+
+
+
+
+

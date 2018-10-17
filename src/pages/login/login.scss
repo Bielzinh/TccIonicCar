@@ -4,7 +4,11 @@
   height:100%;
   background-size:cover; //ajusta a tela
   background-position:center;
-}
+    background: linear-gradient(to left,#ADD8E6 0%, #fff 100%);
+
+  }
+
+
 
 //ICONE DE LOGIN
 .icon-login{
@@ -33,6 +37,7 @@
   height: fit-content;
   background-size:cover; //ajusta a tela
   background-position:center;
+  background: linear-gradient(to left,#E0FFFF 0%, #fff 100%);
 }
 .ctaRegister{
   padding: 10px;
